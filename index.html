@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Anuj Dubey is a B.Tech CSE student and full-stack developer seeking web development internships.">
+  <title>Anuj Dubey | Software Developer</title>
+  <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Anuj Dubey home">
+      <span class="brand-mark">AD.</span>
+      <span class="brand-name">ANUJ DUBEY</span>
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#about">About</a>
+      <a class="nav-contact" href="#contact"> Contact </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <p class="availability"><span></span> Open to web development internships</p>
+        <h1>Hi, I’m Anuj</h1>
+        <p class="hero-tagline">I build useful web products, <br>from idea to deployment.</p>
+        <p class="hero-meta">B.Tech CSE student · Indore, India</p>
+        <p class="hero-summary">Explore my projects, skills, certificates, and contact details for web development internship opportunities.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work</a>
+          <a class="button button-secondary" href="assets/Anuj_Dubey_Resume.pdf" download>Get my resume</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Anuj Dubey, B.Tech CSE student">
+        <img class="avatar" src="assets/profile-photo.png" alt="Anuj Dubey">
+        <div class="hero-card-copy"><h2>B.Tech CSE student</h2><p>Student developer</p></div>
+      </div>
+    </section>
+
+    <section class="section-shell work-section" id="work">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2>AirData, from dashboard to NFC scan</h2>
+        <p>Explore the main flows of my full-stack NFC band management platform.</p>
+      </div>
+
+      <article class="project-card">
+        <button class="featured-preview preview-trigger"
+          data-image="assets/airdata/03_dashboard.png"
+          data-caption="AirData admin dashboard"
+          aria-label="Enlarge AirData dashboard screenshot">
+          <img src="assets/airdata/03_dashboard.png" alt="AirData dashboard with band, scan, and user summaries">
+          <span class="image-label">AirData · Dashboard</span>
+        </button>
+
+        <div class="project-copy">
+          <p class="eyebrow">Full-stack project</p>
+          <h3>AirData — NFC Band Management System</h3>
+          <p>A web platform for managing NFC bands, users, attendance, events and access control.</p>
+          <p class="stack-label">Built and deployed with</p>
+          <ul class="tag-list" aria-label="Technologies">
+            <li>React</li><li>TypeScript</li><li>Node.js</li><li>MongoDB</li><li>JWT</li>
+          </ul>
+          <p class="project-detail">Admin dashboard · scanner flow · CSV reporting · role-based access</p>
+          <div class="project-links">
+            <a href="https://nfc-ebon-ten.vercel.app/" target="_blank" rel="noreferrer" title="The live app opens to its sign-in page">Open app (sign-in) ↗</a>
+            <a href="https://github.com/Anujdubey24/NFC" target="_blank" rel="noreferrer">GitHub repo ↗</a>
+          </div>
+          <div class="demo-access" aria-label="AirData demo login credentials">
+            <div class="demo-access-heading">
+              <div><p class="eyebrow">Try the demo</p><p class="demo-access-note">Limited demo account for exploring AirData.</p></div>
+              <button class="demo-toggle" id="demo-toggle" type="button" aria-controls="demo-credentials" aria-expanded="false">Show credentials</button>
+            </div>
+            <dl class="demo-credentials" id="demo-credentials">
+              <div><dt>Email</dt><dd><span data-demo-value="admin@gmail.com">Hidden until shown</span></dd></div>
+              <div><dt>Password</dt><dd><span data-demo-value="anuj@2416">Hidden until shown</span></dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <div class="gallery-heading">
+            <div>
+              <p class="eyebrow">Product screenshots</p>
+              <p class="gallery-hint">Swipe, scroll, or use the arrows · Select a screen to enlarge</p>
+            </div>
+            <div class="gallery-controls">
+              <button class="gallery-arrow" id="gallery-prev" aria-label="Scroll screenshots left">‹</button>
+              <button class="gallery-arrow" id="gallery-next" aria-label="Scroll screenshots right">›</button>
+            </div>
+          </div>
+
+          <div class="gallery-track" id="gallery-track">
+            <button class="gallery-item preview-trigger" type="button" data-image="assets/airdata/04_nfc-bands.png" data-caption="NFC Bands">
+              <img src="assets/airdata/04_nfc-bands.png" alt="AirData NFC band management screen">
+              <span>NFC Bands</span>
+            </button>
+            <button class="gallery-item preview-trigger" type="button" data-image="assets/airdata/05_nfc-scanner.png" data-caption="Live NFC Scanner">
+              <img src="assets/airdata/05_nfc-scanner.png" alt="AirData live NFC scanner screen">
+              <span>Live Scanner</span>
+            </button>
+            <button class="gallery-item preview-trigger" type="button" data-image="assets/airdata/06_visitors-day-qr.png" data-caption="Visitors and Day QR">
+              <img src="assets/airdata/06_visitors-day-qr.png" alt="AirData visitor passes and day QR screen">
+              <span>Visitors &amp; Day QR</span>
+            </button>
+            <button class="gallery-item preview-trigger" type="button" data-image="assets/airdata/07_canteen-pos.png" data-caption="Canteen POS">
+              <img src="assets/airdata/07_canteen-pos.png" alt="AirData canteen point-of-sale screen">
+              <span>Canteen POS</span>
+            </button>
+            <button class="gallery-item preview-trigger" type="button" data-image="assets/airdata/01_audit-logs.png" data-caption="Audit Logs">
+              <img src="assets/airdata/01_audit-logs.png" alt="AirData audit log screen">
+              <span>Audit Logs</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section-shell skills-section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Toolkit</p>
+        <h2>Technologies I work with</h2>
+      </div>
+      <ul class="skill-list">
+        <li>C / C++</li><li>Java</li><li>Python</li><li>SQL</li>
+        <li>React</li><li>TypeScript</li><li>Node.js</li><li>Express.js</li>
+        <li>MongoDB</li><li>REST APIs</li><li>Git &amp; GitHub</li><li>Postman</li>
+      </ul>
+    </section>
+
+    <section class="section-shell certificates-section" id="certificates">
+      <div class="section-heading">
+        <p class="eyebrow">Learning</p>
+        <h2>Certificates &amp; training</h2>
+        <p>Selected milestones from my learning journey.</p>
+      </div>
+      <div class="certificate-carousel" id="certificate-carousel" aria-label="Certificate carousel. Swipe horizontally or use the arrows to browse.">
+        <button class="certificate-arrow certificate-prev" id="certificate-prev" type="button" aria-label="Previous certificate">‹</button>
+        <div class="certificate-stage" id="certificate-stage" aria-live="polite">
+          <article class="certificate-slide is-active" data-index="0">
+            <button class="certificate-select" type="button" aria-label="Select Full Stack Development MERN certificate" aria-pressed="true">
+              <img src="assets/certificates/mern-workshop.png" alt="Full Stack Development MERN certificate">
+              <span class="certificate-caption"><strong>Full Stack Development (MERN)</strong><small>AimForTech Solutions</small></span>
+            </button>
+            <button class="certificate-open preview-trigger" type="button" data-image="assets/certificates/mern-workshop.png" data-caption="Full Stack Development (MERN) — AimForTech Solutions">View certificate <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="certificate-slide" data-index="1">
+            <button class="certificate-select" type="button" aria-label="Select Data Structures using Java certificate" aria-pressed="false">
+              <img src="assets/certificates/dsa-using-java.png" alt="Data Structures using Java certificate">
+              <span class="certificate-caption"><strong>Data Structures using Java</strong><small>Universal Informatics</small></span>
+            </button>
+            <button class="certificate-open preview-trigger" type="button" data-image="assets/certificates/dsa-using-java.png" data-caption="Data Structures using Java — Universal Informatics">View certificate <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="certificate-slide" data-index="2">
+            <button class="certificate-select" type="button" aria-label="Select Java 2.0 certificate" aria-pressed="false">
+              <img src="assets/certificates/java-2.0.png" alt="Java 2.0 certificate">
+              <span class="certificate-caption"><strong>Java 2.0</strong><small>Universal Informatics</small></span>
+            </button>
+            <button class="certificate-open preview-trigger" type="button" data-image="assets/certificates/java-2.0.png" data-caption="Java 2.0 — Universal Informatics">View certificate <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="certificate-slide" data-index="3">
+            <button class="certificate-select" type="button" aria-label="Select C and C++ OOPS certificate" aria-pressed="false">
+              <img src="assets/certificates/cpp-oops.png" alt="C and C++ OOPS certificate">
+              <span class="certificate-caption"><strong>C &amp; C++ (OOPS)</strong><small>Universal Informatics</small></span>
+            </button>
+            <button class="certificate-open preview-trigger" type="button" data-image="assets/certificates/cpp-oops.png" data-caption="C &amp; C++ (OOPS) — Universal Informatics">View certificate <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="certificate-slide" data-index="4">
+            <button class="certificate-select" type="button" aria-label="Select generative AI model certificate" aria-pressed="false">
+              <img src="assets/certificates/nxtwave-ai-model.png" alt="Build Your Own Generative AI Model certificate">
+              <span class="certificate-caption"><strong>Build Your Own Generative AI Model</strong><small>NxtWave</small></span>
+            </button>
+            <button class="certificate-open preview-trigger" type="button" data-image="assets/certificates/nxtwave-ai-model.png" data-caption="Build Your Own Generative AI Model — NxtWave">View certificate <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="certificate-slide" data-index="5">
+            <button class="certificate-select" type="button" aria-label="Select AI Tools and Claude workshop certificate" aria-pressed="false">
+              <img src="assets/certificates/be10x-ai-workshop.png" alt="AI Tools and Claude Workshop certificate">
+              <span class="certificate-caption"><strong>AI Tools &amp; Claude Workshop</strong><small>Be10X</small></span>
+            </button>
+            <button class="certificate-open preview-trigger" type="button" data-image="assets/certificates/be10x-ai-workshop.png" data-caption="AI Tools &amp; Claude Workshop — Be10X">View certificate <span aria-hidden="true">↗</span></button>
+          </article>
+        </div>
+        <button class="certificate-arrow certificate-next" id="certificate-next" type="button" aria-label="Next certificate">›</button>
+        <p class="certificate-instruction">Swipe or use arrows · Choose a card to bring it forward · Open it to see the full certificate</p>
+      </div>
+    </section>
+
+    <section class="about-strip section-shell" id="about">
+      <div><p class="eyebrow">What I’m looking for</p><p>Web development internships where I can contribute, learn from a team, and build useful products.</p></div>
+      <a href="#contact">Let’s connect ↗</a>
+    </section>
+
+    <section class="section-shell contact-section" id="contact">
+      <div class="contact-copy">
+        <p class="eyebrow">Have an opportunity?</p>
+        <h2>Let’s connect.</h2>
+        <p>I’m open to web development internship opportunities, project collaborations, and conversations about building useful software.</p>
+      </div>
+      <div class="contact-links">
+        <div class="contact-card contact-copy-card">
+          <a class="contact-main" href="mailto:anujdubeyad15@gmail.com">
+            <span class="contact-icon" aria-hidden="true">@</span><span><small>Email me</small><strong>anujdubeyad15@gmail.com</strong></span><span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+          <button class="copy-button" type="button" data-copy="anujdubeyad15@gmail.com" aria-label="Copy email address" aria-live="polite">Copy</button>
+        </div>
+        <div class="contact-card contact-copy-card">
+          <a class="contact-main" href="tel:+919238522234">
+            <span class="contact-icon" aria-hidden="true">☎</span><span><small>Call me</small><strong>+91 92385 22234</strong></span><span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+          <button class="copy-button" type="button" data-copy="+91 92385 22234" aria-label="Copy phone number" aria-live="polite">Copy</button>
+        </div>
+        <a class="contact-card" href="https://linkedin.com/in/anuj-dubey2416" target="_blank" rel="noreferrer">
+          <span class="contact-icon contact-in" aria-hidden="true">in</span><span><small>Connect professionally</small><strong>LinkedIn profile</strong></span><span class="contact-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="contact-card" href="https://github.com/Anujdubey24" target="_blank" rel="noreferrer">
+          <span class="contact-icon" aria-hidden="true">&lt;/&gt;</span><span><small>Explore my code</small><strong>github.com/Anujdubey24</strong></span><span class="contact-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <strong>Anuj Dubey</strong>
+    <span>Let’s build something useful together.</span>
+    <div>
+      <a href="https://linkedin.com/in/anuj-dubey2416" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="https://github.com/Anujdubey24" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="mailto:anujdubeyad15@gmail.com">Email</a>
+      <a href="tel:+919238522234">Phone</a>
+    </div>
+  </footer>
+
+  <dialog class="preview-dialog" id="preview-dialog" aria-label="Screenshot preview">
+    <form method="dialog"><button class="dialog-close" aria-label="Close preview">×</button></form>
+    <img id="dialog-image" src="" alt="">
+    <p id="dialog-caption"></p>
+  </dialog>
+</body>
+</html>
+<!-- Summary: This page presents Anuj's portfolio, projects, skills, certificates, resume, and contact links. -->
